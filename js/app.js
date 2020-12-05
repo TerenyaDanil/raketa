@@ -136,236 +136,9 @@
 		//const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 	}
 }());
-// let preload = document.querySelector('.preview__video-item');
 
-// preload.onclick = function () {
-// 	document.querySelector('.preview').classList.add('load')
+//////SLIDER///////////////
 
-// }
-
-// setTimeout(function () {
-// 	document.querySelector('.preview').classList.add('load')
-// }, 3900);
-
-
-
-
-// const anchors = document.querySelectorAll('a.scroll-to')
-
-// for (let anchor of anchors) {
-// 	anchor.addEventListener('click', function (e) {
-// 		e.preventDefault()
-
-// 		const blockID = anchor.getAttribute('href')
-
-// 		document.querySelector(blockID).scrollIntoView({
-// 			behavior: 'smooth',
-// 			block: 'start'
-// 		})
-// 	})
-// }
-
-
-// let burger = document.querySelector('.header__burger');
-// let nav = document.querySelector('.header__nav');
-// let page = document.querySelector('.page');
-
-// burger.onclick = function () {
-// 	burger.classList.toggle('active');
-// 	nav.classList.toggle('active');
-// 	page.classList.toggle('lock');
-
-// }
-
-
-// var swiper = new Swiper('.points-container', {
-// 	autoHeight: true,
-// 	loop: true,
-// 	spaceBetween: 30,
-// 	simulateTouch: true,
-// 	speed: 1000,
-// 	navigation: {
-// 		nextEl: '.swiper-button-next',
-// 		prevEl: '.swiper-button-prev',
-// 	},
-// 	pagination: {
-// 		el: '.swiper-pagination',
-// 		dynamicBullets: true,
-// 	},
-// });
-
-
-
-// var rew = document.querySelectorAll('.btn__mob')
-
-// rew.forEach(function (el) {
-// 	el.onclick = function () {
-// 		el.parentElement.parentElement.classList.toggle("active");
-// 		el.classList.toggle("active");
-// 	}
-// });
-
-// var qus = document.querySelectorAll('.inner-program__plus')
-
-// qus.forEach(function (el) {
-// 	el.onclick = function () {
-// 		el.classList.toggle("active");
-// 		el.nextElementSibling.classList.toggle("active");
-// 	}
-// });
-
-
-
-// var qus = document.querySelectorAll('.qustions__item-plus')
-
-// qus.forEach(function (el) {
-// 	el.onclick = function () {
-// 		el.classList.toggle("active");
-// 		el.previousElementSibling.classList.toggle("active");
-// 	}
-// });
-
-// document.querySelector('.dop__btn').onclick = function () {
-// 	document.querySelector('.dop__files').classList.toggle("active");
-// 	document.querySelector('.dop__btn').classList.toggle("active");
-// 	document.querySelector('.dop__text').classList.toggle("active");
-// }
-
-
-// let video = document.querySelectorAll(".points__video");
-// let video__close = document.querySelectorAll('.popup__close-video');
-
-
-
-// function stop() {
-// 	video.pause();
-// 	video.currentTime = 0;
-// }
-
-
-// video__close.forEach(function (el) {
-// 	el.onclick = function () {
-// 		el.nextElementSibling.pause()
-// 		el.currentTime = 0;
-// 	}
-// });
-
-
-
-
-// const popupLinks = document.querySelectorAll('.popup-link');
-// const body = document.querySelector('body');
-// const lockPadding = document.querySelectorAll(".lock-padding");
-
-// let unlock = true;
-
-// const timeout = 300;
-
-// if (popupLinks.length > 0) {
-// 	for (let index = 0; index < popupLinks.length; index++) {
-// 		const popupLink = popupLinks[index];
-// 		popupLink.addEventListener("click", function (e) {
-// 			const popupName = popupLink.getAttribute('href').replace('#', '');
-// 			const curentPopup = document.getElementById(popupName);
-// 			popupOpen(curentPopup);
-// 			e.preventDefault();
-// 		});
-// 	}
-// }
-// const popupCloseIcon = document.querySelectorAll('.popup__close');
-// if (popupCloseIcon.length > 0) {
-// 	for (let index = 0; index < popupCloseIcon.length; index++) {
-// 		const el = popupCloseIcon[index];
-// 		el.addEventListener('click', function (e) {
-// 			popupClose(el.closest('.popup'));
-// 			e.preventDefault();
-// 		});
-// 	}
-// }
-
-// function popupOpen(curentPopup) {
-// 	if (curentPopup && unlock) {
-// 		const popupActive = document.querySelector('.popup.open');
-// 		if (popupActive) {
-// 			popupClose(popupActive, false);
-// 		} else {
-// 			bodyLock();
-// 		}
-// 		curentPopup.classList.add('open');
-
-// 	}
-// }
-
-// function popupClose(popupActive, doUnlock = true) {
-// 	if (unlock) {
-// 		popupActive.classList.remove('open');
-// 		if (doUnlock) {
-// 			bodyUnLock();
-// 		}
-// 	}
-// }
-
-// function bodyLock() {
-// 	const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
-
-// 	if (lockPadding.length > 0) {
-// 		for (let index = 0; index < lockPadding.length; index++) {
-// 			const el = lockPadding[index];
-// 			el.style.paddingRight = lockPaddingValue;
-// 		}
-// 	}
-// 	body.style.paddingRight = lockPaddingValue;
-// 	body.classList.add('lock');
-
-// 	unlock = false;
-// 	setTimeout(function () {
-// 		unlock = true;
-// 	}, timeout);
-// }
-
-// function bodyUnLock() {
-// 	setTimeout(function () {
-// 		if (lockPadding.length > 0) {
-// 			for (let index = 0; index < lockPadding.length; index++) {
-// 				const el = lockPadding[index];
-// 				el.style.paddingRight = '0px';
-// 			}
-// 		}
-// 		body.style.paddingRight = '0px';
-// 		body.classList.remove('lock');
-// 	}, timeout);
-
-// 	unlock = false;
-// 	setTimeout(function () {
-// 		unlock = true;
-// 	}, timeout);
-// }
-
-
-// (function () {
-// 	// проверяем поддержку
-// 	if (!Element.prototype.closest) {
-// 		// реализуем
-// 		Element.prototype.closest = function (css) {
-// 			var node = this;
-// 			while (node) {
-// 				if (node.matches(css)) return node;
-// 				else node = node.parentElement;
-// 			}
-// 			return null;
-// 		};
-// 	}
-// })();
-// (function () {
-// 	// проверяем поддержку
-// 	if (!Element.prototype.matches) {
-// 		// определяем свойство
-// 		Element.prototype.matches = Element.prototype.matchesSelector ||
-// 			Element.prototype.webkitMatchesSelector ||
-// 			Element.prototype.mozMatchesSelector ||
-// 			Element.prototype.msMatchesSelector;
-// 	}
-// })();
 
 var swiper = new Swiper('.swiper-container', {
 	autoHeight: true,
@@ -382,6 +155,296 @@ var swiper = new Swiper('.swiper-container', {
 		dynamicBullets: true,
 	},
 });
+
+
+
+//////SLIDER///////////////
+
+
+//////LINK///////////////
+
+const anchors = document.querySelectorAll('a.scroll-to')
+
+for (let anchor of anchors) {
+	anchor.addEventListener('click', function (e) {
+		e.preventDefault()
+
+		const blockID = anchor.getAttribute('href')
+
+		document.querySelector(blockID).scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		})
+	})
+}
+
+
+
+//////LINK///////////////
+
+
+
+
+
+
+
+
+//////GSAP+Locomotiv///////////////
+const locoScroll = new LocomotiveScroll({
+	el: document.querySelector(".scrollContainer"),
+	smooth: true
+});
+
+
+
+// each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+
+
+
+locoScroll.on("scroll", ScrollTrigger.update);
+
+// tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
+ScrollTrigger.scrollerProxy(".scrollContainer", {
+	scrollTop(value) {
+		return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+	}, // we don't have to define a scrollLeft because we're only scrolling vertically.
+	getBoundingClientRect() {
+		return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+	},
+	// LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+	pinType: document.querySelector(".scrollContainer").style.transform ? "transform" : "fixed"
+});
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+let tl = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".header",   // pin the trigger element while active
+		scroller: ".scrollContainer",
+	}
+});
+
+
+if (window.innerWidth > 737) {
+	tl.from(".header__rocket", { duration: 2.3, ease: "power4.out", opacity: 0, y: 650 }, "+=0.5")
+		.from(".header__sand", { duration: 2.3, ease: "power4.out", opacity: 0, }, "-=2")
+		.from(".header__circle", { duration: 2.3, rotation: 280, ease: "power4.out", opacity: 0, }, "-=1.6")
+		.from(".bottom-header__min", { duration: 1.3, ease: "power4.out", opacity: 0, x: -250 }, "-=0.4")
+		.from(".bottom-header__title", { duration: 1.45, ease: "power4.out", opacity: 0, x: -250 }, "-=0.8")
+		.from(".bottom-header__text", { duration: 1.3, ease: "power4.out", opacity: 0, x: -250 }, "-=0.8")
+		.from(".bottom-header__btn", { duration: 1.3, ease: "power4.out", opacity: 0, x: -250 }, "-=0.8")
+} else {
+	tl.from(".bottom-header__min", { duration: 1.5, ease: "power4.out", opacity: 0, x: -250 }, "+=0.5")
+		.from(".bottom-header__title", { duration: 1.3, ease: "power4.out", opacity: 0, x: -250 }, "-=0.8")
+		.from(".bottom-header__text", { duration: 1.3, ease: "power4.out", opacity: 0, x: -250 }, "-=0.8")
+		.from(".bottom-header__btn", { duration: 1.3, ease: "power4.out", opacity: 0, x: -250 }, "-=0.8")
+}
+
+let tl1 = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".slider",   // pin the trigger element while active
+		scroller: ".scrollContainer",
+		start: "top center",
+	}
+});
+
+tl1.from(".slider__title", { duration: 1.3, ease: "power4.out", opacity: 0, y: 50 }, "+=.3")
+
+
+
+
+let tl2 = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".phone",   // pin the trigger element while active
+		scroller: ".scrollContainer",
+		start: "top center",
+	}
+});
+
+tl2.from(".phone__bg-app", { duration: 1.3, ease: "power4.out", opacity: 0, y: 100 }, "+=.3")
+	.from(".phone__title", { duration: 1.3, ease: "power4.out", opacity: 0, y: -50 }, "-=.6")
+
+
+
+let tl3 = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".video__title",   // pin the trigger element while active
+		scroller: ".scrollContainer",
+		start: "top center"
+	}
+});
+
+tl3.from(".video__title", { duration: 1.3, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+
+
+let tl5 = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".after",   // pin the trigger element while active
+		scroller: ".scrollContainer",
+		start: "top center",
+	}
+});
+
+
+if (window.innerWidth > 737) {
+
+	tl5.from(".after__title ", { duration: 1.3, ease: "power4.out", opacity: 0, y: 50 },)
+		.from(".inner-after__item-group-1", { duration: 0.7, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+		.from(".inner-after__item-group-2", { duration: 0.7, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+		.from(".inner-after__item-group-3", { duration: 0.7, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+		.from(".inner-after__item-group-4", { duration: 0.7, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+} else {
+	tl5.from(".after__title ", { duration: 1.3, ease: "power4.out", opacity: 0, y: 50 },)
+		.from(".inner-after__item-1", { duration: 0.7, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+		.from(".inner-after__item-2", { duration: 0.7, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+		.from(".inner-after__item-3", { duration: 0.7, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+		.from(".inner-after__item-4", { duration: 0.7, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+		.from(".inner-after__item-5", { duration: 0.7, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+		.from(".inner-after__item-6", { duration: 0.7, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+		.from(".inner-after__item-7", { duration: 0.7, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+		.from(".inner-after__item-8", { duration: 0.7, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+		.from(".inner-after__item-9", { duration: 0.7, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+		.from(".inner-after__item-10", { duration: 0.7, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+}
+
+
+
+
+
+
+let tl6 = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".author",   // pin the trigger element while active
+		scroller: ".scrollContainer",
+		start: "top center",
+	}
+});
+
+
+tl6.from(".author__title-first", { duration: 1.3, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+	.from(".text-author__item-1", { duration: 1, ease: "power4.out", opacity: 0, x: 150 }, "-=.6")
+	.from(".text-author__item-2", { duration: 1, ease: "power4.out", opacity: 0, x: 150 }, "-=.6")
+	.from(".text-author__item-3", { duration: 1, ease: "power4.out", opacity: 0, x: 150 }, "-=.6")
+
+
+let tl7 = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".author__time ",   // pin the trigger element while active
+		scroller: ".scrollContainer",
+		start: "top center",
+
+	}
+});
+
+tl7.from(".author__title-second ", { duration: 1.3, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+
+
+
+
+let tl8 = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".invest",   // pin the trigger element while active
+		scroller: ".scrollContainer",
+		start: "top center",
+
+	}
+});
+
+tl8.from(".invest__title", { duration: 1.3, ease: "power4.out", opacity: 0, y: 50 }, "-=.3")
+
+
+
+let tl9 = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".wrap-invest__item-1",   // pin the trigger element while active
+		scroller: ".scrollContainer",
+		start: "top center",
+
+	}
+});
+
+tl9.from(".wrap-invest__text-1", { duration: 1.3, ease: "power4.out", opacity: 0, y: 50 }, "+=.5")
+
+
+
+
+
+let tl10 = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".wrap-invest__item-2",   // pin the trigger element while active
+		scroller: ".scrollContainer",
+		start: "top center",
+
+	}
+});
+
+tl10.from(".wrap-invest__text-2", { duration: 1.3, ease: "power4.out", opacity: 0, y: 50 }, "+=.5")
+
+
+
+
+
+
+let tl11 = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".wrap-invest__item-3",   // pin the trigger element while active
+		scroller: ".scrollContainer",
+		start: "top center",
+
+	}
+});
+
+tl11.from(".wrap-invest__text-3", { duration: 1.3, ease: "power4.out", opacity: 0, y: 50 }, "+=.5")
+
+
+
+
+
+
+let tl12 = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".wrap-invest__item-4",   // pin the trigger element while active
+		scroller: ".scrollContainer",
+		start: "top center",
+
+	}
+});
+
+tl12.from(".wrap-invest__text-4", { duration: 1.3, ease: "power4.out", opacity: 0, y: 50 }, "+=.5")
+
+
+
+
+let tl13 = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".access",   // pin the trigger element while active
+		scroller: ".scrollContainer",
+		start: "top center",
+
+	}
+});
+
+tl13.from(".access__title", { duration: 1.3, ease: "power4.out", opacity: 0, y: 50 }, "+=.5")
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+ScrollTrigger.refresh();
+
+
+//////GSAP+Locomotiv///////////////
 
 
 
